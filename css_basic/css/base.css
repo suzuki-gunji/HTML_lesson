@@ -1,20 +1,11 @@
-div{
-  background-color: blueviolet;
-  margin: 30px;
-  border: solid 10px black;
-  border-width: 10px;
+body{
+  background-color: #ccc;
 }
 
-h1{
-  margin-left: auto;
-  margin-right: auto;
-  background-color: blanchedalmond;
-  padding: 50px;
-  width: 400px;
-  width: 300px;
-  text-align: center;
+#hello{
+  color: aqua;
 }
 
-p{
-  background-color: rgb(206, 136, 31);
+.line{
+  text-decoration: line-through;
 }
