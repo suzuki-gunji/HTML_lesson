@@ -1,3 +1,13 @@
-h1, p{
-  color: aliceblue;
+a:link{
+  color: black;
+}
+a:visited{
+  color: red;
+}
+
+a:hover{
+  color: aqua;
+}
+a:active{
+  color: blue;
 }
