@@ -11,3 +11,7 @@ a:hover{
 a:active{
   color: blue;
 }
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
