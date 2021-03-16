@@ -30,3 +30,23 @@
 // console.log(sum);
 // console.log(average);
 
+// function getRectangle(height, width){
+//   return height * width;
+// }
+
+// console.log(getRectangle(4,6));
+
+// var getRectangle = function(height, width){
+//   return height * width;
+// };
+
+// console.log(getRectangle(4,3))
+
+// var getRectangle = new Function("height", "width", "return height * width");
+// console.log(getRectangle(5,6))
+
+function price(n, unitPrice){
+  return n * unitPrice 
+}
+
+console.log(price(13,60))
