@@ -9,11 +9,24 @@
 //   j++;
 // }
 
-var sum = 0
-for(var i = 1; i<=100; i++){
-  if(i % 2 == 0){
-    sum += i;
-  }
-}
+// var sum = 0
+// for(var i = 1; i<=100; i++){
+//   if(i % 2 == 0){
+//     sum += i;
+//   }
+// }
 
-console.log(sum);
+// console.log(sum);
+
+// var scores = [100, 90, 80, 70, 60];
+// var sum = 0;
+
+// for (var i = 0; i < scores.length; i++){
+//   sum = sum + scores[i];
+// }
+
+// var average = sum / scores.length;
+
+// console.log(sum);
+// console.log(average);
+
