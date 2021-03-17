@@ -37,3 +37,21 @@
 # }
 
 # puts scores.keys
+
+# nums = [1,2,3,4,5]
+# # num.each do |num|
+# #   puts num
+# # end
+
+# # num.each {|num|
+# #   puts num
+# # }
+
+# for num in nums 
+#   puts num
+# end
+
+scores = {nakamura: 90, sato: 70, takahashi: 50}
+scores.each do |name, score|
+  puts "#{name}, #{score}"
+end
