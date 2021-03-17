@@ -1,24 +1,52 @@
-class User 
-  REASION = "USA"
-  @@count = 0
+# class User 
+#   REASION = "USA"
+#   @@count = 0
 
+#   def initialize(name)
+#     @name = name
+#     @@count +=1
+#   end
+
+#   def hello
+#     puts "I am #{@name} #{@@count}人目"
+#   end
+
+#   def self.info
+#     puts "#{@@count} 人目かも REASION: #{REASION}"
+#   end
+# end
+
+# emma = User.new("emma")
+# User.info
+# # emma.hello
+# kyle = User.new("kyle")
+# User.info
+# # kyle.hello
+
+class User
   def initialize(name)
     @name = name
-    @@count +=1
   end
 
   def hello
-    puts "I am #{@name} #{@@count}人目"
+    puts "hello I am #{@name}"
   end
 
-  def self.info
-    puts "#{@@count} 人目かも REASION: #{REASION}"
+end
+
+nakamura = User.new("nakamura")
+nakamura.hello
+
+class AdminUser < User
+  # def hello_admin
+  #   puts "hello 私は#{@name}です"
+  # end
+
+  def hello
+    puts "Admin"
   end
 end
 
-emma = User.new("emma")
-User.info
-# emma.hello
-kyle = User.new("kyle")
-User.info
-# kyle.hello
+suzuki = AdminUser.new("suzuki")
+suzuki.hello
+# suzuki.hello_admin
