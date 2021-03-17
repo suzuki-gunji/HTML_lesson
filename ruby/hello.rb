@@ -23,30 +23,48 @@
 # User.info
 # # kyle.hello
 
+# class User
+#   def initialize(name)
+#     @name = name
+#   end
+
+#   def hello
+#     puts "hello I am #{@name}"
+#   end
+
+# end
+
+# nakamura = User.new("nakamura")
+# nakamura.hello
+
+# class AdminUser < User
+#   def hello_admin
+#     puts "hello 私は#{@name}です"
+#   end
+
+#   def hello
+#     puts "Admin"
+#   end
+# end
+
+# suzuki = AdminUser.new("suzuki")
+# suzuki.hello
+# suzuki.hello_admin
+
 class User
   def initialize(name)
     @name = name
   end
 
-  def hello
-    puts "hello I am #{@name}"
+  def say
+    hello
   end
 
-end
+  private
+    def hello
+      puts "hello #{@name}"
+    end
+end  
 
-nakamura = User.new("nakamura")
-nakamura.hello
-
-class AdminUser < User
-  # def hello_admin
-  #   puts "hello 私は#{@name}です"
-  # end
-
-  def hello
-    puts "Admin"
-  end
-end
-
-suzuki = AdminUser.new("suzuki")
-suzuki.hello
-# suzuki.hello_admin
+user = User.new("sato")
+user.say
