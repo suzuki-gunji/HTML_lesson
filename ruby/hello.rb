@@ -27,3 +27,13 @@
 # end
 
 # fizz_buzz(5)
+
+# scores = {luke: 60, mike: 80, kyle: 100}
+
+# scores.each{|k, v|
+#   if v >= 80
+#     puts "すばらしい！"
+#   end
+# }
+
+# puts scores.keys
