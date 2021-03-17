@@ -1,26 +1,24 @@
-class User
-  attr_accessor :name
-  attr_reader :name
-  attr_writer :name
+class User 
+  REASION = "USA"
+  @@count = 0
 
   def initialize(name)
-    @name=name
+    @name = name
+    @@count +=1
   end
 
-  # def name
-  #   @name
-  # end
+  def hello
+    puts "I am #{@name} #{@@count}人目"
+  end
 
-  # def name=(value)
-  #   @name=value
-  # end
-
-  # def hello
-  #   puts "#{@name}さん、hello"
-  # end
+  def self.info
+    puts "#{@@count} 人目かも REASION: #{REASION}"
+  end
 end
- 
-mike = User.new("Mike")
-puts mike.name
-mike.name="Emily"
-puts mike.name
+
+emma = User.new("emma")
+User.info
+# emma.hello
+kyle = User.new("kyle")
+User.info
+# kyle.hello
