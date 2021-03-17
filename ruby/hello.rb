@@ -51,20 +51,33 @@
 # suzuki.hello
 # suzuki.hello_admin
 
-class User
-  def initialize(name)
-    @name = name
+# class User
+#   def initialize(name)
+#     @name = name
+#   end
+
+#   def say
+#     hello
+#   end
+
+#   private
+#     def hello
+#       puts "hello #{@name}"
+#     end
+# end  
+
+# user = User.new("sato")
+# user.say
+
+module Driver
+  def self.run
+    puts "Run"
   end
 
-  def say
-    hello
+  def self.stop
+    puts "Stop"
   end
+end
 
-  private
-    def hello
-      puts "hello #{@name}"
-    end
-end  
+Driver.run
 
-user = User.new("sato")
-user.say
